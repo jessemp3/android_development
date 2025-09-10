@@ -1,6 +1,11 @@
 package funcoes
 
+import funcoes.tipo_de_funcao.MyStringCollection
+
 fun main() {
 //    let()
-    run()
+//    run()
+//    with()
+//    apply()
+     MyStringCollection().infix()
 }

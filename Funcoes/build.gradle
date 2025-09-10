@@ -1,5 +1,6 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm' version '2.2.0'
+    id 'application'
 }
 
 group = 'funcoes'
@@ -13,9 +14,14 @@ dependencies {
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
 }
 
+application {
+    mainClass = "funcoes.MainKt"
+}
+
 test {
     useJUnitPlatform()
 }
+
 kotlin {
-    jvmToolchain(23)
+    jvmToolchain(22) // pode usar 17 se já tem instalado
 }
