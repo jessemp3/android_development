@@ -19,8 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "firstApp"
-include(":app")
-include(":app")
-include(":app")
+rootProject.name = "desafio"
 include(":app")
