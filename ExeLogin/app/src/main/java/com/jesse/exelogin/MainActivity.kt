@@ -41,8 +41,16 @@ class MainActivity : AppCompatActivity() {
                     dialog.dismiss()
                 }
                 .show()
+        }else if(email.isEmpty() || password.isEmpty()){
+            Toast.makeText(this, "preencha os dados corretamente", Toast.LENGTH_SHORT).show()
         }else{
-            Toast.makeText(this, "Usuário ou senha inválidos", Toast.LENGTH_SHORT).show()
+            AlertDialog.Builder(this)
+                .setTitle("Opss")
+                .setMessage("Usuário ou senha inválidos")
+                .setPositiveButton("OK"){ dialog, which ->
+                    dialog.dismiss()
+                }
+                .show()
         }
     }
 }
