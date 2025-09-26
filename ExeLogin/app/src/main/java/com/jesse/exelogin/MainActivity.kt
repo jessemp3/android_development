@@ -34,13 +34,7 @@ class MainActivity : AppCompatActivity() {
         val password = binding.password.text.toString()
 
         if(email == "cice@gmail.com" && password == "amour"){
-            AlertDialog.Builder(this)
-                .setTitle("Te amo um tantão emmm ")
-                .setMessage("Bem vindo ao sistema")
-                .setPositiveButton("OK"){ dialog, which ->
-                    dialog.dismiss()
-                }
-                .show()
+            goNextview()
         }else if(email.isEmpty() || password.isEmpty()){
             Toast.makeText(this, "preencha os dados corretamente", Toast.LENGTH_SHORT).show()
         }else{
@@ -52,5 +46,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 .show()
         }
+    }
+
+    fun goNextview(){
+        val intent = android.content.Intent(this, Second_View::class.java)
+        startActivity(intent)
     }
 }
