@@ -42,4 +42,4 @@ class Second_View : AppCompatActivity() {
         video.setAudioFocusRequest(android.media.AudioManager.AUDIOFOCUS_GAIN)
         video.start()
     }
-}
+}z
