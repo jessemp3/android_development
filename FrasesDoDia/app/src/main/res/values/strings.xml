@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Frases Do Dia</string>
+    <string name="gerar_frases">Gerar Frases</string>
+    <string name="resultados">Resultados</string>
+    <string name="exibir_todas">Exibir Todas</string>
 </resources>

@@ -27,23 +27,23 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:onClick="gerarFrases"
-        android:text="Gerar Frases"
+        android:text="@string/gerar_frases"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
 
 
-<!--    <Button-->
-<!--        android:id="@+id/verTodas"-->
-<!--        style="@style/Widget.AppCompat.Button"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:onClick="exibirTodas"-->
-<!--        android:text="Exibir Todas"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toEndOf="@id/gerarFrases"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/logo" />-->
+    <Button
+        android:id="@+id/verTodas"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="exibirTodas"
+        android:text="@string/exibir_todas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gerarFrases"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <TextView
         android:id="@+id/fraseDoDia"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/gerarFrases"
-        android:text="Resultados"
+        android:text="@string/resultados"
         android:layout_marginTop="16dp"
         android:textSize="22sp"
         />
